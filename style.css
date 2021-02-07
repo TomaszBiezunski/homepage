@@ -1,0 +1,40 @@
+body {
+    background: #fefefe;
+}
+
+section {
+    background: white;
+}
+
+h1 {
+    color: #42033D;
+}
+
+p {
+    color: #24296e;
+}
+
+h2 {
+    color: #145aaa;
+}
+
+h4 {
+    color: white;
+}
+
+.naukaHtml {
+    color: #30208b;
+}
+
+.naukaCss {
+    color: #328b20;
+}
+
+.naukaJs {
+    color: #8b7b20;
+}
+
+.header-style {
+    color: #332E3C;
+    background: #A29587;
+}
