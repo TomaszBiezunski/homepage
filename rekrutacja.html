@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>rekrutacja</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+</head>
+<script src="rekrutacja.js"></script>
+
+
+<body>
+    <script>
+        function Person(first, last, job, skills) {
+            /* this.name = {first,last};*/
+            this.lookingForJob = job;
+            this.hasSkills = skills;
+
+        }
+        const you = new Person("Tomasz", "Biezunski", true, true);
+        const bestCompany = 'rekrutacja@grupavist.pl';
+
+        console.log(you);
+
+        function applyToUs() {
+            window.open(`mailto:${bestCompany}`
+            }
+            if (you.lookingForJob && you.hasSkills) {
+                applyToUs;
+            }
+    </script>
+
+</body>
+<footer>
+    Strona domowa Tomasz Bieżuńskiego, wszystkie treści są efektem tworzenia szkolenia WTF: Co ten frontend.
+
+    <br>
+    <a href="#top">Wróc na górę strony</a>
+    </br>
+
+</footer>
+
+
+
+</html>
