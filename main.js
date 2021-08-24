@@ -46,3 +46,40 @@ function helloWorld() {
 }
 
 helloWorld();
+
+// Lesson objects
+
+const deathStar = {
+        diameter: 120000, //diameter is property (własność)
+        fire: (target) => {
+            console.log(`${target} destroyed *`)
+        }, //fire is method (metoda)
+        isOperating: true,
+        levels: 357,
+        name: 'Death Star',
+        population: 10000,
+        isLightOn: true,
+        commander: {
+            name: 'Darth Vader',
+            age: 44,
+        }
+    }
+    //console is object .log is method
+    // deathStar is object .name is method
+    // dot notation
+    // How do the dots work? :)
+console.log(deathStar.name)
+console.log(console) //shows all possible methods "console"
+console.log(deathStar.commander) //shows object "commander"
+console.log(deathStar.commander.name) //shows the method of the object "commander"
+    // method call
+deathStar.fire('Rebel ship')
+
+// bracket notation
+const myProperty = 'name'
+
+const showMyProperty = (myProperty) => {
+    console.log(`Twoja własność ${myProperty} to:${deathStar[myProperty]}`);
+}
+
+showMyProperty('levels')
