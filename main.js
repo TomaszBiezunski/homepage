@@ -83,3 +83,68 @@ const showMyProperty = (myProperty) => {
 }
 
 showMyProperty('levels')
+
+// Immutability in objects - niezmienność w obiektach
+// const to stałe połączenia
+// let można przepinać połączenia
+
+// 1st
+const humanOne = {
+        name: 'Maciek',
+        age: 32
+    }
+    /*const humanTwo = {
+    name: 'Stefan',
+        age: 32
+    }
+    */
+
+// humanTwo.age = 35 
+// zmiana wartości 32 na 35 w obiekcie humanTwo
+
+const humanTwo = humanOne;
+
+humanTwo.age = 35
+
+console.log(humanOne)
+console.log(humanTwo)
+
+// 2nd
+const humOne = {
+    name: 'Maciek',
+    age: 32
+}
+const humTwo = {
+    name: 'Stefan',
+    age: humOne.age
+}
+
+console.log(humOne); //age is 32
+console.log(humTwo); //age download in age with humOne
+
+//change value age in
+
+humOne.age = 35;
+
+console.log(humOne); //age changed 35
+console.log(humTwo); //nothing changed
+
+// 3th
+const hum_One = {
+    name: 'Maciek',
+    age: 32,
+    address: {
+        street: 'Warszawska',
+        city: 'Elbląg',
+    }
+}
+const hum_Two = {
+    name: 'Stefan',
+    age: 35,
+    address: hum_One.address.street,
+    city: 'Elbląg'
+}
+hum_One.address.street = 'Malborska';
+
+console.log(hum_One); //address changed Malborska
+console.log(hum_Two); //nothing changed
