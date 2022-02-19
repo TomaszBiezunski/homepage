@@ -1,0 +1,17 @@
+body {
+    background: #2D2241;
+    color: #fff;
+}
+
+.box {
+    background: rgba(red, green, blue, alpha);
+    min-width: 600px;
+    height: 400px;
+    overflow: auto;
+}
+
+.secondary-box {
+    height: 30px;
+    background: #fff;
+    width: 1200px;
+}
