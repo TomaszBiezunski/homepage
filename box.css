@@ -4,14 +4,20 @@ body {
 }
 
 .box {
-    background: rgba(red, green, blue, alpha);
-    min-width: 600px;
-    height: 400px;
+    background: rgba(214, 203, 203, 0.4);
     overflow: auto;
+    width: 200px;
+    height: 200px;
+    padding: 20px 40px 50px 30px;
+    border-width: 10px;
+    border-style: solid;
+    border-color: #fff;
+    border-radius: 20px;
+    margin: 10px auto;
 }
 
-.secondary-box {
-    height: 30px;
-    background: #fff;
-    width: 1200px;
+.centered {
+    margin: 0 auto;
+    background: hotpink;
+    width: 150px;
 }
